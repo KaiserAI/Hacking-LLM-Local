@@ -141,3 +141,7 @@ prompts_web.py   → Configuración de niveles y system prompts defensivos
 ---
 
 Proyecto educativo para prácticas de seguridad ofensiva y defensiva en LLMs.
+
+# Agradecimientos
+A [Sam](https://github.com/SamthinkGit/SamthinkGit.git)
+por la ayuda.
