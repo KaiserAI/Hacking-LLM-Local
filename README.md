@@ -26,7 +26,6 @@ Sigue estos pasos en tu terminal para iniciar el juego.
 Asegúrate de tener Ollama instalado y descargar el modelo Llama 3.2:
 
 ```bash
-octave
 ollama run llama3.2
 ```
 
