@@ -1,0 +1,96 @@
+[project]
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+# Duration (in seconds) of the user session expiry
+user_session_timeout = 1296000  # 15 days
+
+# Enable third parties caching (e.g., LangChain cache)
+cache = false
+
+# Whether to persist user environment variables (API keys) to the database
+persist_user_env = false
+
+# Whether to mask user environment variables (API keys) in the UI
+mask_user_env = false
+
+# Authorized origins
+allow_origins = ["*"]
+
+[features]
+# Process and display HTML in messages.
+unsafe_allow_html = true
+# He puesto true para que el Markdown complejo funcione mejor,
+# pero si prefieres seguridad total déjalo en false.
+
+# Process and display mathematical expressions.
+latex = false
+
+# Autoscroll new user messages
+user_message_autoscroll = true
+
+# Automatically tag threads
+auto_tag_thread = true
+
+# Allow users to edit their own messages
+edit_message = true
+
+# Allow users to share threads
+allow_thread_sharing = false
+
+[features.slack]
+reaction_on_message_received = false
+
+# --- CONFIGURACIÓN DE ARCHIVOS ---
+[features.spontaneous_file_upload]
+    # CAMBIO IMPORTANTE: Esto desactiva el botón de subir archivos nativamente
+    enabled = false
+    accept = ["*/*"]
+    max_files = 20
+    max_size_mb = 500
+
+[features.audio]
+    enabled = false
+    sample_rate = 24000
+
+[features.mcp]
+    enabled = false
+
+[features.mcp.sse]
+    enabled = true
+
+[features.mcp.streamable-http]
+    enabled = true
+
+[features.mcp.stdio]
+    enabled = true
+    allowed_executables = [ "npx", "uvx" ]
+
+# --- CONFIGURACIÓN DE INTERFAZ (MEGACORP) ---
+[UI]
+# Nombre de la pestaña y del chat
+name = "MegaCorp Terminal"
+
+# Descripción que sale al pasar el ratón o en la home
+description = "Acceso restringido solo a personal autorizado."
+
+# Chain of Thought (CoT) display mode.
+cot = "full"
+
+# Archivo CSS para ocultar elementos extra o cambiar fuente
+custom_css = "/public/style.css"
+
+# The style of alert boxes.
+alert_style = "classic"
+
+# (Opcional) Si quieres ocultar el botón de "Readme" que a veces sale
+# hide_cot = true
+
+# default_theme = "dark"
+# layout = "wide"
+
+[meta]
+generated_by = "2.9.1"
