@@ -9,7 +9,7 @@
 
 **MegaCorp** is an interactive Cybersecurity Capture The Flag (CTF) platform designed to simulate and analyze **Prompt Injection attacks** against corporate AI systems.
 
-Unlike standard chatbots, this application implements a progressive "defense-in-depth" architecture, simulating distinct security clearance levels. The goal is to research how Large Language Models (LLMs) can be manipulated to leak sensitive information (PII/Credentials) despite system instructions, aligning with **OWASP Top 10 for LLM Applications (LLM01: Prompt Injection)**.
+Unlike standard chatbots, this application implements a progressive "defense-in-depth" architecture, simulating distinct security clearance levels. The goal is to research how Large Language Models (LLMs) can be manipulated to leak sensitive information (PII/Credentials) despite system instructions.
 
 ## ⚡ Technical Architecture & Trade-offs
 
@@ -104,5 +104,3 @@ Special thanks to [Sam](https://www.google.com/search?q=https://github.com/Samth
 ---
 
 **Disclaimer:** This tool is for educational purposes and security research only.
-
-```
